@@ -1733,7 +1733,7 @@
     background-color: #000;
   }
   .bg-neutral {
-    background-color: rgba(var(--color-neutral), 1);
+    background-color: rgba(var(--color-neutral-50), 1);
   }
   .bg-neutral-50 {
     background-color: rgba(var(--color-neutral-50), 1);
@@ -1748,9 +1748,9 @@
     background-color: rgba(var(--color-neutral-100), 1);
   }
   .bg-neutral-100\/75 {
-    background-color: color-mix(in srgb, rgba(rgba(var(--color-neutral-100), 1), 1) 75%, transparent);
+    background-color: color-mix(in srgb, rgba(rgba(var(--color-neutral-50), 1), 1) 75%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, rgba(var(--color-neutral-100), 1) 75%, transparent);
+      background-color: color-mix(in oklab, rgba(var(--color-neutral-50), 1) 75%, transparent);
     }
   }
   .bg-neutral-300 {
@@ -1824,7 +1824,7 @@
     background-image: none;
   }
   .from-neutral {
-    --tw-gradient-from: rgba(var(--color-neutral), 1);
+    --tw-gradient-from: rgba(var(--color-neutral-50), 1);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
   .from-primary-500 {

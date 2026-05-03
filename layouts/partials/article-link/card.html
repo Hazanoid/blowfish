@@ -83,7 +83,7 @@
           href="{{ $page.RelPermalink }}"
         {{ end }}
         class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2">
-        <h2>
+        <h2 class="dark:text-neutral-300">
           {{ .Title | emojify }}
           {{ if .Params.externalUrl }}
             <span class="cursor-default align-top text-xs text-neutral-400 dark:text-neutral-500">
@@ -94,11 +94,11 @@
         </h2>
       </a>
     </header>
-    <div class="text-sm text-neutral-500 dark:text-neutral-400">
+    <div class="text-sm text-neutral-500 dark:text-neutral">
       {{ partial "article-meta/basic.html" . }}
     </div>
     {{ if .Params.showSummary | default (.Site.Params.list.showSummary | default false) }}
-      <div class="article-link__summary prose dark:prose-invert mt-1 line-clamp-5">
+      <div class="article-link__summary prose dark:prose-invert mt-1 line-clamp-5 text-neutral-500 dark:text-neutral-400">
         {{ .Summary | plainify }}
       </div>
     {{ end }}
